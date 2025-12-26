@@ -1,12 +1,12 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import pickle
+import joblib
 
 #load The model
-model = pickle.load(open('rent_model.pkl', 'rb'))
-encoder = pickle.load(open('encoder.pkl', 'rb'))
-scaler = pickle.load(open('scaler.pkl', 'rb'))
+model = joblib.load(open('rent_model.pkl', 'rb'))
+encoder = joblib.load(open('encoder.pkl', 'rb'))
+scaler = joblib.load(open('scaler.pkl', 'rb'))
 
 st.image("house.png", caption="My Image", use_container_width=True)
 
