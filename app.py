@@ -4,9 +4,9 @@ import numpy as np
 import joblib
 
 #load The model
-model = joblib.load(open('rent_model.pkl', 'rb'))
-encoder = joblib.load(open('encoder.pkl', 'rb'))
-scaler = joblib.load(open('scaler.pkl', 'rb'))
+model = joblib.load('rent_model.pkl')
+encoder = joblib.load('encoder.pkl')
+scaler = joblib.load('scaler.pkl')
 
 st.image("house.png", caption="My Image", use_container_width=True)
 
